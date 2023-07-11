@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="methods">
+	<parameter name="browser" value="chrome" />
+	<listeners>
+		<listener class-name="main.Listeners"/>
+		<listener class-name="main.AnnotationTransformer"/>
+	</listeners>
+	
+	<test name="test1">
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="test2">	
+		<classes>
+			<class name="tests.MyAccountTest" />
+		</classes>
+	</test>
+
+	<test name="test3">
+		<classes>
+			<class name="tests.ResetPasswordTest" />
+		</classes>
+	</test>
+</suite>
