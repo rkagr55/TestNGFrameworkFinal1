@@ -24,7 +24,7 @@ public class LoginPage extends BaseClass {
 
 	public String launchBrowser() throws InterruptedException {
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		return driver.getTitle();
 	}
 
